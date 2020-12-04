@@ -28,7 +28,7 @@ namespace AdventofCode4
                 {
                     case "byr":
                         int year = int.Parse(item.Substring(4));
-                        if (year <= 2002 && year >=1920) BirthYear = year;
+                        if (year <= 2002 && year >= 1920) BirthYear = year;
                         else BirthYear = null;
                         break;
 
@@ -54,29 +54,29 @@ namespace AdventofCode4
                         if (hCm >= 150 && hCm <= 193) Height = height;
                         if (hIn >= 59 && hIn <= 76) Height = height;
                         break;
-                    
+
                     case "hcl":
                         string substring = item.Substring(4);
                         Match isValid = Regex.Match(substring.Substring(1), "[0-9a-fA-F]+");
                         if (substring[0] == '#' && isValid.Success && substring.Length == 7) Haircolor = substring;
                         break;
-                   
+
                     case "ecl":
                         var colorList = new List<string>() { "amb", "blu", "brn", "gry", "grn", "hzl", "oth" };
                         if (colorList.Contains(item.Substring(4))) EyeColor = item.Substring(4);
-                            
 
-                            break;
+
+                        break;
                     case "pid":
                         int pid = 0;
                         bool number = int.TryParse(item.Substring(4), out pid);
                         if (item.Substring(4).Length == 9 && number) PassportID = item.Substring(4);
-                        else PassportID = null;                     
-                            break;
-                  
+                        else PassportID = null;
+                        break;
+
                     case "cid":
                         break;
-                   
+
                     case "":
                         Console.WriteLine("invalid input");
                         break;

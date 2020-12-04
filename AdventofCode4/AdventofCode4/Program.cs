@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace AdventofCode4
@@ -30,7 +30,5 @@ namespace AdventofCode4
             System.Console.WriteLine(validpassports);
             Console.ReadKey();
         }
-
     }
 }
-
