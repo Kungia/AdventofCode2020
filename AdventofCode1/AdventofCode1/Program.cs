@@ -8,7 +8,6 @@ namespace AdventofCode1
     {
         static void Main(string[] args)
         {
-            //Uppgift: Hitta två tal i listan som tillsammans blir 2020. Multiplicera båda talen och ange summan i AdventOfCode
             var inputData = File.ReadAllLines(@"C:\Users\olivi\source\repos\AdventofCode1\AdventofCode1\adventofcode.txt");
             int[] numArr = Enumerable.Range(0, inputData.Length).Select(i => int.Parse(inputData[i].Trim())).ToArray();
 
