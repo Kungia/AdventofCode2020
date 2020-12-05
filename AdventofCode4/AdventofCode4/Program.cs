@@ -8,7 +8,7 @@ namespace AdventofCode4
     {
         static void Main(string[] args)
         {
-            var data = File.ReadAllText(@"C:\Users\olivi\source\repos\AdventofCode2020\AdventofCode4\AdventofCode4\AdventofCode4.txt");
+            var data = File.ReadAllText(@"C:\Users\olivi\source\repos\AdventofCode2020\AdventofCode4\AdventofCode4.txt");
             var passportArray = data.Split(Environment.NewLine + Environment.NewLine);
             List<Passport> passportlist = new List<Passport>();
             foreach (var item in passportArray)
